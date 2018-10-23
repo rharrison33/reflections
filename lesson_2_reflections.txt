@@ -2,3 +2,47 @@ What happens when you initialize a repository? Why do you need to do it?
 
 	- A .git file if placed in the directory but nothing is commited yet.
 	- Do this to start committing changes and track a project.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+	- Staging area differs from the working directory and the repository because it only contains files that will be added in the next commit and not the entire contents of the repo or working directory.
+	- Value of the staging area is the flexibility to commit only files that make sense. You may not want to commit all the changes that you've made in other files.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	- By only adding the logical files for a single change
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	- Situations
+		1. New Features
+		2. Bugs
+		3. Experimental Development
+		4. String localization
+	- Helpful because
+		1. Commits made by other users will not distract you from your current work on your isolated branch.
+
+How do the diagrams help you visualize the branch structure?
+
+	- You can see what is and isn't reachable from your current commit location on whatever branch you're on.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	- Code from two branches will be merged so that multiple features will be in the new branch head.
+	- So we can see what commits are reachable from the new branch head
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Git's automatic merging can save the user a lot of time!  Especially when
+    multiple people are working together, merging everything manually could be
+    very painful.
+
+    The downside of automatic merging is that it's not perfect.  Merging the
+    coins branch with the master branch, which included color, resulted in
+    inconsistent visuals, where most items were colored but the coins were not.
+    Git could even make worse mistakes - for example, if one branch deleted a
+    function, and another branch added a call to that function, Git would merge
+    those together with no conflict and the resulting code would be broken.
+
+    Overall, Git's merging can save a lot of time, but it's important to always
+    double check that the code still works after doing a merge.
