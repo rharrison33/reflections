@@ -1,29 +1,41 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    Fill in your answer here
+    * To allow others to view your code. Also, you can allow collaboraters to your projects.
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    Pulling changes manually allows you to work on your changes without having other collaborators constantly changing code that might conflict with your changes.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    A fork is when you clone a repository that you don't have permission to change. A clone is when you pull a repository into your local machine from GitHub or another local directory in order to make changes to that repository. A branch is part of a repository that a user will use to make changes while others are using the same repository.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    So that you can have changes that others have made to the repository when you go offline. For example, if you were going into the woods for a camping trip, but you wanted to work on the project, you would have access to changes and maybe perform a merge offline.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    If I had to collaborate on a coding project without using Git or GitHub (or
+    any other form of version control designed for code), I might suggest that
+    we all make changes to a shared folder, for example, a DropBox folder.  This
+    would be a ligter-weight solution than using Git and GitHub.  However, if we
+    both wanted to work on the same part of the file, it would be very difficult
+    to avoid clobbering each other's changes.
+
+    Real-time collaborative editors like Google Docs are also great for
+    collaboration, but I don't know a good version of Google Docs for code.
+    Even if I did, I would be hesitant to use this approach on code that it's
+    important to keep bug-free.  I would be worried that someone else would add
+    a change that combined with my change to make a bug, and I might not even
+    notice their change!
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    When you want to fix a bug, make a new feature, or just try something expirimentally. You can do this while others work on the main branch and you don't have to fear code changing out from under you.
